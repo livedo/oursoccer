@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7057E36F1BA726F800722165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E36E1BA726F800722165 /* AppDelegate.swift */; };
+		7057E3711BA726F800722165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E3701BA726F800722165 /* ViewController.swift */; };
+		7057E3741BA726F800722165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7057E3721BA726F800722165 /* Main.storyboard */; };
+		7057E3761BA726F900722165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7057E3751BA726F900722165 /* Assets.xcassets */; };
+		7057E3811BA726F900722165 /* RsoccerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E3801BA726F900722165 /* RsoccerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7057E37D1BA726F900722165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7057E3631BA726F800722165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7057E36A1BA726F800722165;
+			remoteInfo = Rsoccer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7057E36B1BA726F800722165 /* Rsoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7057E36E1BA726F800722165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7057E3701BA726F800722165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7057E3731BA726F800722165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7057E3751BA726F900722165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7057E3771BA726F900722165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7057E37C1BA726F900722165 /* RsoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsoccerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7057E3801BA726F900722165 /* RsoccerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsoccerTests.swift; sourceTree = "<group>"; };
+		7057E3821BA726F900722165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7057E3681BA726F800722165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057E3791BA726F900722165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7057E3621BA726F800722165 = {
+			isa = PBXGroup;
+			children = (
+				7057E36D1BA726F800722165 /* Rsoccer */,
+				7057E37F1BA726F900722165 /* RsoccerTests */,
+				7057E36C1BA726F800722165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7057E36C1BA726F800722165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7057E36B1BA726F800722165 /* Rsoccer.app */,
+				7057E37C1BA726F900722165 /* RsoccerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7057E36D1BA726F800722165 /* Rsoccer */ = {
+			isa = PBXGroup;
+			children = (
+				7057E36E1BA726F800722165 /* AppDelegate.swift */,
+				7057E3701BA726F800722165 /* ViewController.swift */,
+				7057E3721BA726F800722165 /* Main.storyboard */,
+				7057E3751BA726F900722165 /* Assets.xcassets */,
+				7057E3771BA726F900722165 /* Info.plist */,
+			);
+			path = Rsoccer;
+			sourceTree = "<group>";
+		};
+		7057E37F1BA726F900722165 /* RsoccerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7057E3801BA726F900722165 /* RsoccerTests.swift */,
+				7057E3821BA726F900722165 /* Info.plist */,
+			);
+			path = RsoccerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7057E36A1BA726F800722165 /* Rsoccer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7057E3851BA726F900722165 /* Build configuration list for PBXNativeTarget "Rsoccer" */;
+			buildPhases = (
+				7057E3671BA726F800722165 /* Sources */,
+				7057E3681BA726F800722165 /* Frameworks */,
+				7057E3691BA726F800722165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rsoccer;
+			productName = Rsoccer;
+			productReference = 7057E36B1BA726F800722165 /* Rsoccer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7057E37B1BA726F900722165 /* RsoccerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7057E3881BA726F900722165 /* Build configuration list for PBXNativeTarget "RsoccerTests" */;
+			buildPhases = (
+				7057E3781BA726F900722165 /* Sources */,
+				7057E3791BA726F900722165 /* Frameworks */,
+				7057E37A1BA726F900722165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7057E37E1BA726F900722165 /* PBXTargetDependency */,
+			);
+			name = RsoccerTests;
+			productName = RsoccerTests;
+			productReference = 7057E37C1BA726F900722165 /* RsoccerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7057E3631BA726F800722165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Mikael Roos";
+				TargetAttributes = {
+					7057E36A1BA726F800722165 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7057E37B1BA726F900722165 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7057E36A1BA726F800722165;
+					};
+				};
+			};
+			buildConfigurationList = 7057E3661BA726F800722165 /* Build configuration list for PBXProject "Rsoccer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7057E3621BA726F800722165;
+			productRefGroup = 7057E36C1BA726F800722165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7057E36A1BA726F800722165 /* Rsoccer */,
+				7057E37B1BA726F900722165 /* RsoccerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7057E3691BA726F800722165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057E3761BA726F900722165 /* Assets.xcassets in Resources */,
+				7057E3741BA726F800722165 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057E37A1BA726F900722165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7057E3671BA726F800722165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057E3711BA726F800722165 /* ViewController.swift in Sources */,
+				7057E36F1BA726F800722165 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057E3781BA726F900722165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057E3811BA726F900722165 /* RsoccerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7057E37E1BA726F900722165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7057E36A1BA726F800722165 /* Rsoccer */;
+			targetProxy = 7057E37D1BA726F900722165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7057E3721BA726F800722165 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7057E3731BA726F800722165 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7057E3831BA726F900722165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7057E3841BA726F900722165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7057E3861BA726F900722165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Rsoccer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7057E3871BA726F900722165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Rsoccer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7057E3891BA726F900722165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RsoccerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = livedo.RsoccerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rsoccer.app/Rsoccer";
+			};
+			name = Debug;
+		};
+		7057E38A1BA726F900722165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RsoccerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = livedo.RsoccerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rsoccer.app/Rsoccer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7057E3661BA726F800722165 /* Build configuration list for PBXProject "Rsoccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057E3831BA726F900722165 /* Debug */,
+				7057E3841BA726F900722165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7057E3851BA726F900722165 /* Build configuration list for PBXNativeTarget "Rsoccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057E3861BA726F900722165 /* Debug */,
+				7057E3871BA726F900722165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7057E3881BA726F900722165 /* Build configuration list for PBXNativeTarget "RsoccerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057E3891BA726F900722165 /* Debug */,
+				7057E38A1BA726F900722165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7057E3631BA726F800722165 /* Project object */;
+}
