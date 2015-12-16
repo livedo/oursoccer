@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7057E36F1BA726F800722165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E36E1BA726F800722165 /* AppDelegate.swift */; };
-		7057E3711BA726F800722165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E3701BA726F800722165 /* ViewController.swift */; };
-		7057E3741BA726F800722165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7057E3721BA726F800722165 /* Main.storyboard */; };
 		7057E3761BA726F900722165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7057E3751BA726F900722165 /* Assets.xcassets */; };
 		7057E3811BA726F900722165 /* RsoccerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E3801BA726F900722165 /* RsoccerTests.swift */; };
+		7057E38C1BA72BFC00722165 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 7057E38B1BA72BFC00722165 /* main.js */; };
+		7057E38E1BA72C3800722165 /* hello.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 7057E38D1BA72C3800722165 /* hello.tvml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +27,13 @@
 /* Begin PBXFileReference section */
 		7057E36B1BA726F800722165 /* Rsoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7057E36E1BA726F800722165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7057E3701BA726F800722165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7057E3731BA726F800722165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7057E3751BA726F900722165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7057E3771BA726F900722165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7057E37C1BA726F900722165 /* RsoccerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsoccerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7057E3801BA726F900722165 /* RsoccerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsoccerTests.swift; sourceTree = "<group>"; };
 		7057E3821BA726F900722165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7057E38B1BA72BFC00722165 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		7057E38D1BA72C3800722165 /* hello.tvml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.tvml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				7057E36E1BA726F800722165 /* AppDelegate.swift */,
-				7057E3701BA726F800722165 /* ViewController.swift */,
-				7057E3721BA726F800722165 /* Main.storyboard */,
 				7057E3751BA726F900722165 /* Assets.xcassets */,
 				7057E3771BA726F900722165 /* Info.plist */,
+				7057E38B1BA72BFC00722165 /* main.js */,
+				7057E38D1BA72C3800722165 /* hello.tvml */,
 			);
 			path = Rsoccer;
 			sourceTree = "<group>";
@@ -142,6 +142,7 @@
 				TargetAttributes = {
 					7057E36A1BA726F800722165 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = XZKJ5E77LM;
 					};
 					7057E37B1BA726F900722165 = {
 						CreatedOnToolsVersion = 7.1;
@@ -173,8 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7057E38E1BA72C3800722165 /* hello.tvml in Resources */,
 				7057E3761BA726F900722165 /* Assets.xcassets in Resources */,
-				7057E3741BA726F800722165 /* Main.storyboard in Resources */,
+				7057E38C1BA72BFC00722165 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7057E3711BA726F800722165 /* ViewController.swift in Sources */,
 				7057E36F1BA726F800722165 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,17 +215,6 @@
 			targetProxy = 7057E37D1BA726F900722165 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7057E3721BA726F800722165 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7057E3731BA726F800722165 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7057E3831BA726F900722165 /* Debug */ = {
@@ -313,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Rsoccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
@@ -325,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Rsoccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
