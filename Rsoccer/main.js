@@ -16,9 +16,11 @@ function pushDoc(document) {
     navigationDocument.pushDocument(document);
 //    var button = document.getElementsByTagName("button")[0];
     
-    document.addEventListener('select', function() {
-                              console.log("GOT SELECT");
-                         launchPlayer();
+    document.addEventListener('select', function(e) {
+                              evve = e;
+                              getVideo(e.target.getAttribute("url"));
+                              console.log("GOT SELECT", arguments);
+                         //launchPlayer();
                          });
 }
 
@@ -41,14 +43,15 @@ App.onLaunch = function(options) {
     pushDoc(doc);
     
     
-    getDocument("https://www.reddit.com/r/soccer.json?limit=30", function(e) {
-                response = e.target.response; // TODO: var
+    getDocument("https://www.reddit.com/r/soccer.json?limit=100", function(e) {
+                var response = e.target.response;
                 var posts = response.data.children;
                 console.log(posts);
                 var post, i, fragment;
                 for(i = 0; i < posts.length; i++) {
                     post = posts[i].data;
                     if (post.domain == "streamable.com") {
+                //(post.media && post.media.oembed && post.media.oembed.type == "video") {
                         console.log("goat streamable");
                         fragment = parser.parseFromString(listItem(post), "application/xml");
                         frag = fragment.firstChild;
@@ -56,7 +59,6 @@ App.onLaunch = function(options) {
                         // TODO: Why the dom exception?
                         //section.appendChild(fragment.firstChild);
                         section.innerHTML = section.innerHTML + listItem(post);
-                        getVideo(post);
                     }
                 
                 }
@@ -69,10 +71,14 @@ App.onExit = function() {
     console.log('App finished');
 }
 
-function getVideo(post) {
-    if (post.domain == "streamable.com") {
-        getStreamable(post);
+function getVideo(url) {
+    var matches;
+    if (matches = url.match(/^https\:\/\/streamable\.com\/(\w+)/)) {
+        console.log("got streamable id", matches[1]);
+        getStreamable(matches[1]);
     } else {
+        console.log("NO MATCH!!!");
+        importAndPlay(url)
     }
     // if streamable
         // Get data from streamable API
@@ -81,14 +87,29 @@ function getVideo(post) {
             // Get data from streamable API
 }
 
-function getStreamable(post) {
-    
+function importAndPlay(url) {
+    getDocument("https://api.streamable.com/import?url=" + encodeURI(url), function(e) {
+                var response = e.target.response;
+                console.log("IMPORTED!!!", response);
+                getStreamable(response.shortcode);
+                });
 }
 
-function launchPlayer() {
+
+function getStreamable(id) {
+    console.log("getting streamable id", id);
+    getDocument("https://api.streamable.com/videos/" + id, function(e) {
+                var response = e.target.response;
+                console.log(response);
+                launchPlayer("http:" + response.files.mp4.url);
+                });
+}
+
+function launchPlayer(url) {
+    console.log("Now playing", url);
     var player = new Player();
     var playlist = new Playlist();
-    var mediaItem = new MediaItem("video", "http://trailers.apple.com/movies/focus_features/9/9-clip_480p.mov");
+    var mediaItem = new MediaItem("video", url);
     player.playlist = playlist;
     player.playlist.push(mediaItem);
     player.present();
@@ -102,7 +123,7 @@ function baseTemplate() {
         <listTemplate>
             <list>
                 <header>
-                    <title>Our Soccer</title>
+                    <title>Hot videos on r/soccer</title>
                 </header>
                 <section id="main">
                 </section>
@@ -116,17 +137,20 @@ function baseTemplate() {
 function listItem(post) {
     var img;
     try {
-        img = post.secure_media.oembed.thumbnail;
+        console.log("tryin");
+        img = post.media.oembed;
     } catch(e) {
+        console.log("phail");
         img = {};
     }
+    console.log(img);
     return `
-    <listItemLockup id="${post.id}">
-        <title>⌛ ${post.title}</title>
+    <listItemLockup id="${post.id}" url="${post.url}">
+        <title>${post.title}</title>
         <relatedContent>
             <lockup>
                 <img src="${img.thumbnail_url}" width="${img.thumbnail_width}" height="${img.thumbnail_height}" />
-                <title>Video</title>
+                <title>Video (${post.domain})</title>
                 <description>${post.title}</description>
             </lockup>
         </relatedContent>
