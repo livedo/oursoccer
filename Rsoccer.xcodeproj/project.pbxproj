@@ -11,7 +11,6 @@
 		7057E3761BA726F900722165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7057E3751BA726F900722165 /* Assets.xcassets */; };
 		7057E3811BA726F900722165 /* RsoccerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7057E3801BA726F900722165 /* RsoccerTests.swift */; };
 		7057E38C1BA72BFC00722165 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 7057E38B1BA72BFC00722165 /* main.js */; };
-		7057E38E1BA72C3800722165 /* hello.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 7057E38D1BA72C3800722165 /* hello.tvml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +32,6 @@
 		7057E3801BA726F900722165 /* RsoccerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsoccerTests.swift; sourceTree = "<group>"; };
 		7057E3821BA726F900722165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7057E38B1BA72BFC00722165 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		7057E38D1BA72C3800722165 /* hello.tvml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.tvml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 				7057E3751BA726F900722165 /* Assets.xcassets */,
 				7057E3771BA726F900722165 /* Info.plist */,
 				7057E38B1BA72BFC00722165 /* main.js */,
-				7057E38D1BA72C3800722165 /* hello.tvml */,
 			);
 			path = Rsoccer;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7057E38E1BA72C3800722165 /* hello.tvml in Resources */,
 				7057E3761BA726F900722165 /* Assets.xcassets in Resources */,
 				7057E38C1BA72BFC00722165 /* main.js in Resources */,
 			);
@@ -367,6 +363,7 @@
 				7057E3871BA726F900722165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7057E3881BA726F900722165 /* Build configuration list for PBXNativeTarget "RsoccerTests" */ = {
 			isa = XCConfigurationList;
@@ -375,6 +372,7 @@
 				7057E38A1BA726F900722165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
