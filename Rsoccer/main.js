@@ -17,6 +17,7 @@ function pushDoc(document) {
 
 
 App.onLaunch = function(options) {
+    console.log("launch options", options);
     var resource = baseTemplate();
     var parser = new DOMParser();
     var doc = parser.parseFromString(resource, "application/xml");
@@ -33,6 +34,7 @@ App.onLaunch = function(options) {
                     post = posts[i].data;
                     if (post.domain == "streamable.com") {
                 //(post.media && post.media.oembed && post.media.oembed.type == "video") {
+                //TODO: Support for GFY, imgur, youtube?
                         section.innerHTML = section.innerHTML + listItem(post);
                     }
                 
@@ -81,7 +83,7 @@ function launchPlayer(url) {
     var mediaItem = new MediaItem("video", url);
     player.playlist = playlist;
     player.playlist.push(mediaItem);
-    player.present();
+    player.present(); // TODO: Can you present the player to block stuff when making api calls prior
     player.play()
 }
 

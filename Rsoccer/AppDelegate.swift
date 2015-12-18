@@ -20,9 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         
         let appControllerContext = TVApplicationControllerContext()
         
-        let javascriptURL = NSURL(string: String("http://localhost:8000/main.js"))
+        let javascriptURL = NSURL(string: String("https://raw.githubusercontent.com/livedo/oursoccer/master/Rsoccer/main.js"))
         
         appControllerContext.javaScriptApplicationURL = javascriptURL!
+        
         if let options = launchOptions
         {
             for (kind, value) in options

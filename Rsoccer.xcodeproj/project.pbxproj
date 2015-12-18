@@ -139,7 +139,7 @@
 				TargetAttributes = {
 					7057E36A1BA726F800722165 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = XZKJ5E77LM;
+						DevelopmentTeam = HJLYDFUML4;
 					};
 					7057E37B1BA726F900722165 = {
 						CreatedOnToolsVersion = 7.1;
@@ -302,8 +302,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Rsoccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livedo.rsoccer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
 		};
@@ -315,8 +316,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Rsoccer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = livedo.Rsoccer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livedo.rsoccer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
