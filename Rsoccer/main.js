@@ -90,11 +90,12 @@ function baseTemplate() {
     return `<?xml version="1.0" encoding="UTF-8" ?>
     <document>
         <listTemplate>
+            <banner>
+                <title>Our/soccer</title>
+            </banner>
             <list>
-                <header>
-                    <title>Hot videos on r/soccer</title>
-                </header>
                 <section id="main">
+                    <header><title>Hot videos</title></header>
                 </section>
             </list>
         </listTemplate>
